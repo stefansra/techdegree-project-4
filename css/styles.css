@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Bangers|Lato");
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -456,6 +457,15 @@ ol {
   margin: 0;
 }
 
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
 .grid__row {
   padding: 1em 10px;
   display: flex;
@@ -591,6 +601,32 @@ ol {
   [class^=grid__col] + [class^=grid__col] {
     margin-left: 10px;
   }
+}
+
+.nav {
+  margin-top: 0.625em;
+  margin-bottom: 1.25em;
+}
+.nav__item {
+  display: block;
+  text-align: center;
+  padding: 0.9375em 0;
+  border-radius: 0.4em;
+}
+.nav__item a {
+  font-weight: 300;
+  color: #797e83;
+}
+.nav__item:first-child {
+  background-color: #00e9c4;
+}
+.nav__item:first-child a {
+  color: #fff;
+}
+
+.img--logo {
+  display: block;
+  margin: 1.25em auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

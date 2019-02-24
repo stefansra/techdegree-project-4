@@ -7,6 +7,13 @@ $font-url--google: "https://fonts.googleapis.com/css?family=Bangers|Lato";
 $font-stack--primary: "Lato", "Helvetica Neue", Helvetica;
 $font-stack--secondary: "Bangers", sans-serif;
 
+// Font Weights
+$font-weight--thin: 100;
+$font-weight--light: 300;
+$font-weight--medium: 400;
+$font-weight--bold: 700;
+$font-weight--ultra-bold: 900;
+
 // base colors
 $white: #fff;
 $black: #0b0b0b;
@@ -14,16 +21,17 @@ $grey: #797e83;
 
 $fountain-blue: #52bab3;
 $emerald: #5ece7f;
+$robins-egg-blue: #00e9c4; // color name frome name that color ;)
 $sunglo: #e67478;
 $coral: #ff784f;
 $purple-majesty: #9279c3;
 $scooter: #39add1;
 
 // color usage
-$color-primary: $fountain-blue;
-$color-secondary: $scooter;
-$color-accent: $emerald;
-$color-shadow: rgba($black, 0.2);
+$color--primary: $fountain-blue;
+$color--secondary: $robins-egg-blue;
+$color--accent: $emerald;
+$color--shadow: rgba($black, 0.2);
 
 // color palettes
 $palettes: (
@@ -59,5 +67,5 @@ $br--default: 0.4em;
 $br--round: 50%;
 
 // breakpoints
-$break-mobile: 480px;
-$break-desktop: 1400px;
+$break--mobile: 480px;
+$break--desktop: 1400px;

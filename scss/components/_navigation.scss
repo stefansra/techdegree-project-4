@@ -1,3 +1,25 @@
 // ======================================
 //  Navigation
 // ======================================
+
+.nav {
+  margin-top: em(10px);
+  margin-bottom: em(20px);
+  &__item {
+    display: block;
+    text-align: center;
+    padding: em(15px) 0;
+    border-radius: $br--default;
+
+    a {
+      font-weight: $font-weight--light;
+      color: palette(grey);
+    }
+    &:first-child {
+      background-color: $color--secondary;
+    }
+    &:first-child a {
+      color: $white;
+    }
+  }
+}

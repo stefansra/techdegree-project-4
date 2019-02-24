@@ -1,3 +1,18 @@
 // ======================================
 //  Base Styles
 // ======================================
+
+* {
+  box-sizing: border-box;
+  font-size: $base__font-size;
+}
+
+ul {
+}
+
+p {
+}
+
+a {
+  text-decoration: none;
+}
