@@ -2,7 +2,15 @@
 //  Images
 // ======================================
 
-.img--logo {
+.img--logo,
+.img--avatar,
+.img--frame {
   display: block;
   margin: em(20px) auto;
+}
+
+.img--frame {
+  width: 100%;
+  border: 1px solid palette(grey, x-light);
+  padding: em(10px) em(10px);
 }

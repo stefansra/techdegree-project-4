@@ -19,6 +19,7 @@ $white: #fff;
 $black: #0b0b0b;
 $grey: #797e83;
 
+$cyan: #00e0ff;
 $fountain-blue: #52bab3;
 $emerald: #5ece7f;
 $robins-egg-blue: #00e9c4; // color name frome name that color ;)
@@ -28,8 +29,8 @@ $purple-majesty: #9279c3;
 $scooter: #39add1;
 
 // color usage
-$color--primary: $fountain-blue;
-$color--secondary: $robins-egg-blue;
+$color--primary: $robins-egg-blue;
+$color--secondary: $cyan;
 $color--accent: $emerald;
 $color--shadow: rgba($black, 0.2);
 
@@ -51,12 +52,22 @@ $palettes: (
 );
 
 // ui color palettes
-$ui-colors: (
-  default: $fountain-blue,
+$button-colors: (
+  default: $cyan,
   success: $emerald,
   error: $sunglo,
   warning: $coral,
   info: $purple-majesty
+);
+
+$grid-colors: (
+  12: lighten($emerald, 12%),
+  8: lighten($coral, 12%),
+  7: lighten($sunglo, 12%),
+  6: darken($cyan, 12%),
+  5: lighten($emerald, 12%),
+  4: lighten($cyan, 5%),
+  3: lighten($purple-majesty, 12%)
 );
 
 // text

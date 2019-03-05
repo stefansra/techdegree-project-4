@@ -10,16 +10,16 @@
     text-align: center;
     padding: em(15px) 0;
     border-radius: $br--default;
-
     a {
       font-weight: $font-weight--light;
       color: palette(grey);
+      text-decoration: none;
     }
-    &:first-child {
-      background-color: $color--secondary;
-    }
-    &:first-child a {
-      color: $white;
+    &:hover {
+      background-color: $color--primary;
+      a {
+        color: $white;
+      }
     }
   }
 }

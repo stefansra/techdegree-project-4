@@ -1,4 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Bangers|Lato");
+.btn--info, .btn--warning, .btn--error, .btn--success, .btn--default {
+  width: 100%;
+  padding: 0.9375em 0.625em;
+  margin: 0.625em 0;
+  border-radius: 0.4em;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  color: #fff;
+}
+
+.theme__colors.grid__col--3, .theme__colors.grid__col--4, .theme__colors.grid__col--5, .theme__colors.grid__col--6, .theme__colors.grid__col--7, .theme__colors.grid__col--8, .theme__colors.grid__col--12 {
+  width: 100%;
+  padding: 0.9375em 0.625em;
+  margin: 0.3125em 0;
+  border-radius: 0.4em;
+  border: none;
+  font-size: 0.875em;
+  color: #656a6e;
+}
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -459,11 +480,11 @@ ol {
 
 * {
   box-sizing: border-box;
-  font-size: 16px;
 }
 
-a {
-  text-decoration: none;
+.container {
+  font-size: 16px;
+  padding: 0 1.25em;
 }
 
 .grid__row {
@@ -603,6 +624,40 @@ a {
   }
 }
 
+.card p {
+  color: #797e83;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+.headline--primary {
+  color: #00e9c4;
+  font-size: 1.875em;
+  margin-left: 1.25em;
+}
+
+.headline--secondary {
+  color: #999da1;
+  font-weight: 100;
+}
+
+.link {
+  text-decoration: none;
+  color: #00e0ff;
+  font-weight: 400;
+  font-size: 1.0625em;
+}
+
+.blockquote {
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #797e83;
+  font-style: italic;
+  border-left: 10px solid #00e9c4;
+  border-radius: 0.3em;
+  padding-left: 1.25em;
+}
+
 .nav {
   margin-top: 0.625em;
   margin-bottom: 1.25em;
@@ -616,17 +671,91 @@ a {
 .nav__item a {
   font-weight: 300;
   color: #797e83;
+  text-decoration: none;
 }
-.nav__item:first-child {
+.nav__item:hover {
   background-color: #00e9c4;
 }
-.nav__item:first-child a {
+.nav__item:hover a {
   color: #fff;
 }
 
-.img--logo {
+.img--logo,
+.img--avatar,
+.img--frame {
   display: block;
   margin: 1.25em auto;
+}
+
+.img--frame {
+  width: 100%;
+  border: 1px solid #d6d7d9;
+  padding: 0.625em 0.625em;
+}
+
+.btn--default {
+  background-color: #00e0ff;
+}
+.btn--success {
+  background-color: #5ece7f;
+}
+.btn--error {
+  background-color: #e67478;
+}
+.btn--warning {
+  background-color: #ff784f;
+}
+.btn--info {
+  background-color: #9279c3;
+}
+
+.theme__colors.grid__col--12 {
+  background-color: #8ddca4;
+}
+.theme__colors.grid__col--8 {
+  background-color: #ffa78c;
+}
+.theme__colors.grid__col--7 {
+  background-color: #efa8aa;
+}
+.theme__colors.grid__col--6 {
+  background-color: #00aac2;
+}
+.theme__colors.grid__col--5 {
+  background-color: #8ddca4;
+}
+.theme__colors.grid__col--4 {
+  background-color: #1ae3ff;
+}
+.theme__colors.grid__col--3 {
+  background-color: #b4a3d6;
+}
+
+/*
+    color: $white;
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label--hidden {
+  display: none;
+}
+
+.form__input {
+  border: none;
+  border-bottom: 5px solid #00e9c4;
+  margin: 0.625em 0.9375em;
+  padding: 0.625em 1.25em;
+  outline: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

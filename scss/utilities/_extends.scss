@@ -1,0 +1,24 @@
+// ======================================
+//  Extends
+// ======================================
+
+%button {
+  width: 100%;
+  padding: em(15px) em(10px);
+  margin: em(10px) 0;
+  border-radius: $br--default;
+  border: none;
+  text-transform: uppercase;
+  font-size: em(14px);
+  color: $white;
+}
+
+%grid-button {
+  width: 100%;
+  padding: em(15px) em(10px);
+  margin: em(5px) 0;
+  border-radius: $br--default;
+  border: none;
+  font-size: em(14px);
+  color: palette(grey, dark);
+}
