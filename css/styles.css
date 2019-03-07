@@ -20,6 +20,50 @@
   color: #656a6e;
 }
 
+.nav__item {
+  display: block;
+  text-align: center;
+  padding: 0.9375em 0;
+  border-radius: 0.4em;
+}
+
+.nav__item a {
+  font-weight: 300;
+  color: #797e83;
+  text-decoration: none;
+}
+
+.headline--primary {
+  color: #00e9c4;
+  font-size: 2em;
+  line-height: 1.125em;
+  margin-top: 0;
+  margin-bottom: 1.09375em;
+  margin-left: 0.625em;
+}
+
+.headline--secondary {
+  color: #999da1;
+  font-weight: 100;
+}
+
+.link {
+  text-decoration: none;
+  color: #00e0ff;
+  font-weight: 400;
+  font-size: 1.0625em;
+}
+
+.blockquote {
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #797e83;
+  font-style: italic;
+  border-left: 0.4166666667em solid #00e9c4;
+  border-radius: 0.3em;
+  padding-left: 0.8333333333em;
+}
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -482,6 +526,12 @@ ol {
   box-sizing: border-box;
 }
 
+p {
+  color: #797e83;
+  line-height: 1.5625em;
+  font-weight: 300;
+}
+
 .container {
   font-size: 16px;
   padding: 0 1.25em;
@@ -624,54 +674,20 @@ ol {
   }
 }
 
-.card p {
-  color: #797e83;
-  line-height: 25px;
-  font-weight: 300;
+.container > .headline--secondary {
+  padding-left: 0.625em;
 }
 
-.headline--primary {
-  color: #00e9c4;
-  font-size: 1.875em;
-  margin-left: 1.25em;
+.link:hover {
+  opacity: 0.5;
 }
-
-.headline--secondary {
-  color: #999da1;
-  font-weight: 100;
-}
-
-.link {
-  text-decoration: none;
-  color: #00e0ff;
-  font-weight: 400;
-  font-size: 1.0625em;
-}
-
-.blockquote {
-  font-size: 1.5em;
-  font-weight: 300;
-  color: #797e83;
-  font-style: italic;
-  border-left: 10px solid #00e9c4;
-  border-radius: 0.3em;
-  padding-left: 1.25em;
+.link:active {
+  opacity: 1;
 }
 
 .nav {
   margin-top: 0.625em;
   margin-bottom: 1.25em;
-}
-.nav__item {
-  display: block;
-  text-align: center;
-  padding: 0.9375em 0;
-  border-radius: 0.4em;
-}
-.nav__item a {
-  font-weight: 300;
-  color: #797e83;
-  text-decoration: none;
 }
 .nav__item:hover {
   background-color: #00e9c4;
@@ -688,7 +704,7 @@ ol {
 }
 
 .img--frame {
-  width: 100%;
+  width: 95%;
   border: 1px solid #d6d7d9;
   padding: 0.625em 0.625em;
 }
@@ -696,17 +712,47 @@ ol {
 .btn--default {
   background-color: #00e0ff;
 }
+.btn--default:hover {
+  opacity: 0.5;
+}
+.btn--default:active {
+  opacity: 1;
+}
 .btn--success {
   background-color: #5ece7f;
+}
+.btn--success:hover {
+  opacity: 0.5;
+}
+.btn--success:active {
+  opacity: 1;
 }
 .btn--error {
   background-color: #e67478;
 }
+.btn--error:hover {
+  opacity: 0.5;
+}
+.btn--error:active {
+  opacity: 1;
+}
 .btn--warning {
   background-color: #ff784f;
 }
+.btn--warning:hover {
+  opacity: 0.5;
+}
+.btn--warning:active {
+  opacity: 1;
+}
 .btn--info {
   background-color: #9279c3;
+}
+.btn--info:hover {
+  opacity: 0.5;
+}
+.btn--info:active {
+  opacity: 1;
 }
 
 .theme__colors.grid__col--12 {
@@ -731,19 +777,10 @@ ol {
   background-color: #b4a3d6;
 }
 
-/*
-    color: $white;
-    width: 100%;
-    height: 40px;
-    margin: 10px 0;
-    font-size: 14px;
-    text-transform: uppercase;
-    border-radius: 5px;
-    border: none;
-    */
 .form {
   display: flex;
   flex-direction: column;
+  margin: 2.5em 0;
 }
 
 .form__label--hidden {
@@ -756,6 +793,9 @@ ol {
   margin: 0.625em 0.9375em;
   padding: 0.625em 1.25em;
   outline: 0;
+}
+.form__input:focus {
+  border-color: #50ffe3;
 }
 
 /*# sourceMappingURL=styles.css.map */

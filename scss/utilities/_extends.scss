@@ -2,6 +2,8 @@
 //  Extends
 // ======================================
 
+// buttons
+
 %button {
   width: 100%;
   padding: em(15px) em(10px);
@@ -21,4 +23,55 @@
   border: none;
   font-size: em(14px);
   color: palette(grey, dark);
+}
+
+// nav items
+
+%nav-item-disp {
+  display: block;
+  text-align: center;
+  padding: em(15px) 0;
+  border-radius: $br--default;
+}
+
+%nav-item-link {
+  font-weight: $font-weight--light;
+  color: palette(grey);
+  text-decoration: none;
+}
+
+// headlines
+%headline-primary {
+  color: $color--primary;
+  font-size: em(32px);
+  line-height: em(36px, 32px);
+  margin-top: 0;
+  margin-bottom: em(35px, 32px);
+  margin-left: em(20px, 32px);
+}
+
+%headline-secondary {
+  color: palette(grey, light);
+  font-weight: $font-weight--thin;
+}
+
+// link
+
+%link {
+  text-decoration: none;
+  color: $cyan;
+  font-weight: $font-weight--medium;
+  font-size: em(17px);
+}
+
+// blockquote
+
+%blockquote {
+  font-size: em(24px);
+  font-weight: $font-weight--light;
+  color: palette(grey);
+  font-style: italic;
+  border-left: em(10px, 24px) solid $color--primary;
+  border-radius: 0.3em;
+  padding-left: em(20px, 24px);
 }

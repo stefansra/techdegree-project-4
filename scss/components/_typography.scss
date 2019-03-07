@@ -2,36 +2,28 @@
 //  Typography
 // ======================================
 
-.card {
-  p {
-    color: palette(grey);
-    line-height: 25px;
-    font-weight: $font-weight--light;
+.headline--primary {
+  @extend %headline-primary;
+}
+
+.headline--secondary {
+  @extend %headline-secondary;
+}
+
+.container > .headline--secondary {
+  padding-left: em(10px);
+}
+
+.link {
+  @extend %link;
+  &:hover {
+    opacity: 0.5;
+  }
+  &:active {
+    opacity: 1;
   }
 }
 
-.headline--primary {
-  color: $color--primary;
-  font-size: em(30px);
-  margin-left: em(20px);
-}
-.headline--secondary {
-  color: palette(grey, light);
-  font-weight: $font-weight--thin;
-}
-.link {
-  text-decoration: none;
-  color: $cyan;
-  font-weight: $font-weight--medium;
-  font-size: em(17px);
-}
-
 .blockquote {
-  font-size: em(24px);
-  font-weight: $font-weight--light;
-  color: palette(grey);
-  font-style: italic;
-  border-left: 10px solid $color--primary;
-  border-radius: 0.3em;
-  padding-left: em(20px);
+  @extend %blockquote;
 }

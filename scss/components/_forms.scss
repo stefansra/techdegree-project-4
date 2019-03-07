@@ -5,6 +5,7 @@
 .form {
   display: flex;
   flex-direction: column;
+  margin: em(40px) 0;
 }
 
 .form__label--hidden {
@@ -17,4 +18,8 @@
   margin: em(10px) em(15px);
   padding: em(10px) em(20px);
   outline: 0;
+
+  &:focus {
+    border-color: lighten($color--primary, 20%);
+  }
 }

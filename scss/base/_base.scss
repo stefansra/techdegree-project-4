@@ -10,6 +10,9 @@ ul {
 }
 
 p {
+  color: palette(grey);
+  line-height: em(25px);
+  font-weight: $font-weight--light;
 }
 
 a {
