@@ -7,6 +7,12 @@
   margin-bottom: em(20px);
   &__item {
     @extend %nav-item-disp;
+    @include mq(desktop) {
+      margin-right: em(50px);
+      &:last-child {
+        margin-right: em(150px);
+      }
+    }
     a {
       @extend %nav-item-link;
     }
@@ -16,5 +22,13 @@
         color: $white;
       }
     }
+  }
+}
+
+.nav {
+  @include mq(desktop) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
   }
 }

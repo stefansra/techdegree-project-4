@@ -2,6 +2,50 @@
 //  Mixins
 // ======================================
 
+// bem selectors
+
+@mixin e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+// media queries
+
+@mixin mq($break) {
+  @if $break == "small" {
+    @media (min-width: $break-small) and (max-width: $break-mobile) {
+      @content;
+    }
+  } @else if $break == "mobile" {
+    @media (min-width: $break-mobile) {
+      @content;
+    }
+  } @else if $break == "desktop" {
+    @media (min-width: $break-desktop) {
+      @content;
+    }
+  } @else {
+    @error "Wrong value for '#{$break}'.";
+  }
+}
+
+// flex
+@mixin flex($dir: null, $wrap: null, $just: space-around, $align: center) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $just;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
+// color modifier classes
+
 @mixin bg-colors($map) {
   @each $theme, $color in $map {
     &--#{$theme} {

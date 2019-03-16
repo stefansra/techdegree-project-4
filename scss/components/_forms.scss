@@ -3,9 +3,8 @@
 // ======================================
 
 .form {
-  display: flex;
-  flex-direction: column;
-  margin: em(40px) 0;
+  @include flex($dir: column, $align: null);
+  padding: 20px 10px;
 }
 
 .form__label--hidden {

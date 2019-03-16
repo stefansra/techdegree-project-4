@@ -45,6 +45,7 @@
 .headline--secondary {
   color: #999da1;
   font-weight: 100;
+  margin: 0 auto 1rem 0.5rem;
 }
 
 .link {
@@ -533,25 +534,36 @@ p {
 }
 
 .container {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
   font-size: 16px;
-  padding: 0 1.25em;
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 80%;
+  }
 }
 
 .grid__row {
-  padding: 1em 10px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 1em 10px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1400px) {
   .grid__row {
     flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
   }
 }
 .grid__col--1 {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1400px) {
   .grid__col--1 {
     margin-top: 0;
     flex-basis: 8.3333333333%;
@@ -561,7 +573,7 @@ p {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1400px) {
   .grid__col--2 {
     margin-top: 0;
     flex-basis: 16.6666666667%;
@@ -571,7 +583,7 @@ p {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1400px) {
   .grid__col--3 {
     margin-top: 0;
     flex-basis: 25%;
@@ -581,7 +593,7 @@ p {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1400px) {
   .grid__col--4 {
     margin-top: 0;
     flex-basis: 33.3333333333%;
@@ -591,7 +603,7 @@ p {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1400px) {
   .grid__col--5 {
     margin-top: 0;
     flex-basis: 41.6666666667%;
@@ -601,7 +613,7 @@ p {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1400px) {
   .grid__col--6 {
     margin-top: 0;
     flex-basis: 50%;
@@ -611,7 +623,7 @@ p {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1400px) {
   .grid__col--7 {
     margin-top: 0;
     flex-basis: 58.3333333333%;
@@ -621,7 +633,7 @@ p {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1400px) {
   .grid__col--8 {
     margin-top: 0;
     flex-basis: 66.6666666667%;
@@ -631,7 +643,7 @@ p {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1400px) {
   .grid__col--9 {
     margin-top: 0;
     flex-basis: 75%;
@@ -641,7 +653,7 @@ p {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1400px) {
   .grid__col--10 {
     margin-top: 0;
     flex-basis: 83.3333333333%;
@@ -651,7 +663,7 @@ p {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1400px) {
   .grid__col--11 {
     margin-top: 0;
     flex-basis: 91.6666666667%;
@@ -661,16 +673,40 @@ p {
   margin-top: 10px;
   flex-basis: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1400px) {
   .grid__col--12 {
     margin-top: 0;
     flex-basis: 100%;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1400px) {
   [class^=grid__col] + [class^=grid__col] {
     margin-left: 10px;
+  }
+}
+
+.grid__col--12 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (min-width: 1400px) {
+  .grid__col--12 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.grid__row .grid__col--12 .theme__colors {
+  margin: 1rem 0;
+}
+@media (min-width: 1400px) {
+  .grid__row .grid__col--12 .theme__colors {
+    margin: 0 1rem;
   }
 }
 
@@ -689,11 +725,27 @@ p {
   margin-top: 0.625em;
   margin-bottom: 1.25em;
 }
+@media (min-width: 1400px) {
+  .nav__item {
+    margin-right: 3.125em;
+  }
+  .nav__item:last-child {
+    margin-right: 9.375em;
+  }
+}
 .nav__item:hover {
   background-color: #00e9c4;
 }
 .nav__item:hover a {
   color: #fff;
+}
+
+@media (min-width: 1400px) {
+  .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+  }
 }
 
 .img--logo,
@@ -780,7 +832,8 @@ p {
 .form {
   display: flex;
   flex-direction: column;
-  margin: 2.5em 0;
+  justify-content: space-around;
+  padding: 20px 10px;
 }
 
 .form__label--hidden {

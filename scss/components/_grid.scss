@@ -1,26 +1,29 @@
-// **********************************************
-// _grid.scss
-// styles related to the grid system and
-// main container.
-// major grid styles have been added here for you
-// but additional styling may be needed
-// **********************************************
+// ======================================
+//  Grid system and main container
+// ======================================
+
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+  font-size: $base__font-size;
+  @include mq(desktop) {
+    width: 80%;
+  }
+}
 
 // grid base class
 .grid {
-  // .grid__row
   &__row {
+    @include flex($dir: column, $just: center, $align: stretch);
     padding: 1em 10px;
-    display: flex;
-    flex-direction: column;
-
-    // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    @include mq(desktop) {
       flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
     }
   }
 
-  // .grid__col
   &__col {
     // create grid columns dynamically
     // loop through each column size
@@ -35,7 +38,7 @@
         flex-basis: 100%;
 
         // NOTE: replace with media query mixin if aiming for exceeds
-        @media (min-width: 768px) {
+        @include mq(desktop) {
           // base stlyes applied to all grid columns
           margin-top: 0;
 
@@ -52,9 +55,23 @@
   // grid__col + grid__col, targets two sibling columns
   & + & {
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    @include mq(desktop) {
       // add grid gutter
       margin-left: 10px;
     }
+  }
+}
+
+.grid__col--12 {
+  @include flex($dir: column);
+  @include mq(desktop) {
+    @include flex($dir: row, $just: space-around);
+  }
+}
+
+.grid__row .grid__col--12 .theme__colors {
+  margin: 1rem 0;
+  @include mq(desktop) {
+    margin: 0 1rem;
   }
 }

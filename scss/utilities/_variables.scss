@@ -22,7 +22,7 @@ $grey: #797e83;
 $cyan: #00e0ff;
 $fountain-blue: #52bab3;
 $emerald: #5ece7f;
-$robins-egg-blue: #00e9c4; // color name frome name that color ;)
+$robins-egg-blue: #00e9c4;
 $sunglo: #e67478;
 $coral: #ff784f;
 $purple-majesty: #9279c3;
@@ -78,5 +78,6 @@ $br--default: 0.4em;
 $br--round: 50%;
 
 // breakpoints
-$break--mobile: 480px;
-$break--desktop: 1400px;
+$break-small: 1px;
+$break-mobile: 480px;
+$break-desktop: 1400px;
