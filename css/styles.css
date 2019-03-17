@@ -45,7 +45,6 @@
 .headline--secondary {
   color: #999da1;
   font-weight: 100;
-  margin: 0 auto 1rem 0.5rem;
 }
 
 .link {
@@ -554,9 +553,15 @@ p {
 }
 @media (min-width: 1400px) {
   .grid__row {
+    display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .grid__row:first-child {
+    display: flex;
     justify-content: space-around;
+    align-items: center;
   }
 }
 .grid__col--1 {
@@ -756,7 +761,7 @@ p {
 }
 
 .img--frame {
-  width: 95%;
+  max-width: 100%;
   border: 1px solid #d6d7d9;
   padding: 0.625em 0.625em;
 }

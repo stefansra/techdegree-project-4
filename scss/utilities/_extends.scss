@@ -41,6 +41,7 @@
 }
 
 // headlines
+
 %headline-primary {
   color: $color--primary;
   font-size: em(32px);
@@ -53,7 +54,6 @@
 %headline-secondary {
   color: palette(grey, light);
   font-weight: $font-weight--thin;
-  margin: 0 auto 1rem 0.5rem;
 }
 
 // link

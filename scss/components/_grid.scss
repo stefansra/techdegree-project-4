@@ -18,9 +18,10 @@
     @include flex($dir: column, $just: center, $align: stretch);
     padding: 1em 10px;
     @include mq(desktop) {
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-around;
+      @include flex($dir: row, $just: center, $align: stretch);
+      &:first-child {
+        @include flex($align: center);
+      }
     }
   }
 
